@@ -138,23 +138,6 @@ function CheckReunion(bureau) {
     }
 }
 
-function testDate(str) {
-    let Date = moment(str, "DD/MM/YYYY");
-    if (Date.isValid()) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function testTime(str) {
-    var Time = moment(str, "HH:mm");
-    if (Time.isValid()) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
 client.once('ready', () => {
     log(`Logged in as ${client.user.tag}!`);
