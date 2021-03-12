@@ -1,38 +1,17 @@
-@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* Error: Module loop: this module is already being loaded.
+ *   ,
+ * 1 | @use 'style'
+ *   | ^^^^^^^^^^^^
+ *   '
+ *   website\assets\style\sass\style.sass 1:1  root stylesheet */
 
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #0e044d;
-}
-
-nav {
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-}
-
-nav > ul {
-    display: flex;
-    width:70%;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    height: 5em;
-}
-
-
-.logo {
-    background-image: url(../media/images/logo.png);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Module loop: this module is already being loaded.\a   \2577 \a 1 \2502  @use 'style'\d\a   \2502  ^^^^^^^^^^^^\a   \2575 \a   website\\assets\\style\\sass\\style.sass 1:1  root stylesheet";
 }
