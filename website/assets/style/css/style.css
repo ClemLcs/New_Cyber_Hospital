@@ -1,5 +1,5 @@
 @import url(https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css);
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -8,31 +8,56 @@ body {
   background-color: #0E044D;
 }
 
-nav {
-  width: 100%;
-  width: 100%;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-nav ul {
-  display: flex;
-  width: 70%;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-}
-
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   height: 5em;
 }
 
-.logo {
-  background-image: url(..assets/img/logo.png);
+nav {
+  display: flex;
+  width: 70%;
+  color: #FFFFFF;
+  justify-content: space-between;
+}
+nav ul {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul a:link, nav ul a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+nav ul a:hover {
+  font-weight: 700;
+  background: linear-gradient(to left, #9982ED 0%, #FFB215 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+.active {
+  font-weight: 700;
+  background: linear-gradient(to left, #9982ED 0%, #FFB215 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+#logo img {
+  width: 35px;
+  height: 35px;
+}
+#logo p {
+  width: fit-content;
+  margin: 0 0 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

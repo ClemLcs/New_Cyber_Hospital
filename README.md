@@ -1,3 +1,6 @@
-# New_Cyber_Hospital
+# New Cyber Hospital
 
-Blabla
+
+### Notes/Idées :
+
+[ ] Idée : avion img siteweb qui se déplace
