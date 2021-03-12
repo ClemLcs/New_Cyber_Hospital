@@ -3,4 +3,4 @@
 
 ### Notes/Idées :
 
-[ ] Idée : avion img siteweb qui se déplace
+- [ ] Idée siteweb : avion img qui se déplace (Antoine).
